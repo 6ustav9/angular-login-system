@@ -1,0 +1,13 @@
+<form [formGroup]="formLogin" novalidate>
+    <div>
+        <label for="email">Email </label>
+        <input type="email" formControlName="email">
+    </div>
+    <div>
+        <label for="senha">Senha </label>
+        <input type="password" formControlName="senha">
+    </div>
+    <div>
+        <input type="button" value="Login" (click)="logar()">
+    </div>
+</form>
